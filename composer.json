@@ -1,0 +1,27 @@
+{
+  "name": "straschek-io/solr-indexing-monitor",
+  "type": "typo3-cms-extension",
+  "description": "Notifies the user about the solr indexing status in record's edit view",
+  "keywords": ["solr", "indexing"],
+  "authors": [
+    {
+      "name": "Michael Straschek",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "apache-solr-for-typo3/solr": "~7.5"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "StrIo\\SolrIndexingMonitor\\": "Classes"
+    }
+  },
+  "replace": {
+    "solr_indexing_monitor": "self.version",
+    "straschek-io/solr-indexing-monitor": "self.version"
+  }
+}
